@@ -18,9 +18,7 @@ int bubble(int temp,int arr[5],int n)
     for(int i=0;i<n;i++)
         {
             printf("\t%d",arr[i]);
-        }
-    
-    
+        }    
 }
 int main()
 {
