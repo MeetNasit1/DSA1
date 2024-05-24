@@ -2,31 +2,34 @@
 
 int temp=-1;
 
-int insert(int arr[],int n,int number){
-    if(temp>=n-1){
+int insert(int arr[],int n,int number)
+{
+    if(temp>=n-1)
+    {
         printf("stack is full \n");
     }
-    else{
+    else
+    {
         temp=temp+1;     // temp move to first index number
         arr[temp] = number;     // user element store in stack
     }
 };
 
-int delete(int arr[]){
-    if(temp<0){
+int delete(int arr[])
+{
+    if(temp<0)
+    {
         printf("stack is empty! \n");
     }
-    else{
+    else
+    {
         temp--;
         printf("last element is delete \n");
     }
 };
 
-
-
-
-int main() {
-    
+int main() 
+{
     int ch;
     int n;
     int number;

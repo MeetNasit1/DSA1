@@ -12,7 +12,6 @@ int shorting (int arr[], int temp,int low,int high,int mid,int x)
                 arr[j]=temp;
             }
         }
-        
     }
     for(int i=0;i<5;i++)
     {
@@ -37,7 +36,6 @@ int shorting (int arr[], int temp,int low,int high,int mid,int x)
        
     }
      return -1;
-    
 }
     
 

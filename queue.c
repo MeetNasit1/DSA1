@@ -4,7 +4,6 @@ int front=-1;
 
 int queueinsert(int n,int arr[],int element)
 {
-
 if(rare==n-1)
 {
     printf("queue is full");
