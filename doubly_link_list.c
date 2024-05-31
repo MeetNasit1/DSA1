@@ -137,7 +137,7 @@ void display()
  
     if (head == NULL) 
     { 
-        printf(" List is Alerady Empty!!"); 
+        printf("Your List is Alerady Empty!!"); 
     } 
     else 
     { 
@@ -157,13 +157,13 @@ int main()
     do 
     { 
  
-        printf("\n  1. for Insert End"); 
-        printf("\n  2. for Delete End"); 
-        printf("\n  3. for Insert First"); 
-        printf("\n  4. for Delete First"); 
-        printf("\n  5. for Insert Mid"); 
-        printf("\n  6. for Delete Mid"); 
-        printf("\n  7. for Display"); 
+        printf("\n press 1. for Insert End"); 
+        printf("\n press 2. for Delete End"); 
+        printf("\n press 3. for Insert First"); 
+        printf("\n press 4. for Delete First"); 
+        printf("\n press 5. for Insert Mid"); 
+        printf("\n press 6. for Delete Mid"); 
+        printf("\n press 7. for Display"); 
  
         printf("\n\nEnter Your choice :"); 
         scanf("%d", &n); 
@@ -218,7 +218,7 @@ int main()
         } 
         else if (n == 6) 
         { 
-            printf("Enter the  position where you can delete your data : "); 
+            printf("Enter the position where you can delete your data : "); 
             scanf("%d", &pos); 
  
             Delete_Mid(pos); 

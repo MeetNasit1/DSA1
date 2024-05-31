@@ -1,26 +1,30 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-struct node{
+struct node
+{
     int data;
     struct node *next;
 };
 struct node *head = NULL;
 
-void insert_end(int val){
+void insert_end(int val)
+{
    
     struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
 
     temp -> data = val;
 
-    if(head == NULL){
+    if(head == NULL)
+    {
         head = temp;
         temp -> next = head;
 
         return;
     }
-    while(ptr -> next != head){
+    while(ptr -> next != head)
+    {
         ptr = ptr -> next;
     }
     ptr -> next = temp;
@@ -57,7 +61,8 @@ void delete_end(){
         printf("list is empty.\n");
         return;
     }
-    if(head -> next == head){
+    if(head -> next == head)
+    {
         free(head);
         head = NULL;
         return;
