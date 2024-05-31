@@ -10,7 +10,6 @@ struct node *head = NULL;
 
 void insert_end(int val)
 {
-   
     struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
 
@@ -32,27 +31,32 @@ void insert_end(int val)
 
     return;
 }
-void  insert_first(int val){
-
+void  insert_first(int val)
+{
     struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
+       
 
      temp->data = val;
 
-    if (head == NULL) {
+    if (head == NULL)
+    {
         head = temp;
         head->next = head;
-    } else {
-        while(ptr -> next != head){
+    } else
+    {
+        while(ptr -> next != head)
+        {
             ptr = ptr -> next;
         }
         temp->next = head;
         ptr->next = temp;
         head = temp;
     return ;
+    }
 }
-}
-void delete_end(){
+void delete_end()
+{
     struct node *ptr = head;
     struct node *pre = NULL;
 
