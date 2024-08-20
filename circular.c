@@ -6,7 +6,7 @@ int rare=-1;
 
 int insertcricular(int arr[],int n,int element)
 {
-    if(front==1 && rare==-1)
+    if(front==-1 && rare==-1)
     {
         front=rare=0;
         arr[rare]=element;

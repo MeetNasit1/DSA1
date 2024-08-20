@@ -20,7 +20,7 @@ int deelet(int index, int arr[100], int size)
         }
 
         //delet array
-    for (int i = index; i < size; i++)
+        for (int i = index; i < size; i++)
         {
             arr[i] = arr[i + 1];
         }
@@ -34,11 +34,9 @@ int deelet(int index, int arr[100], int size)
         printf("no element found!");
     }
 
-    
-
 }
 
-    int main()
+int main()
     {
 
         int index;

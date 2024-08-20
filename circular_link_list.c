@@ -35,8 +35,7 @@ void  insert_first(int val)
 {
     struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
-       
-
+    
      temp->data = val;
 
     if (head == NULL)
