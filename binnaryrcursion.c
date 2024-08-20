@@ -21,7 +21,6 @@ int recurionbinary(int arr[5],int low, int high,int element)
        }
        
        return -1;
-   
 }
 
 int main()
@@ -29,6 +28,7 @@ int main()
     
     int arr[5]={2,5,8,20,50};
     int low=0;
+    
     int high=5;
     int element=20;
     
